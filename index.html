@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+    #header{
+        height: 40px;
+        background-color: blue;
+        color: bisque;
+    }   
+    h2{
+        text-align: center;
+        padding-top:9px;;
+        margin: 10px;
+    }
+    .sec{
+        padding-top: 20px;
+        height: 100px;
+        border: 2px solid darkcyan;
+        border-radius: 7px;
+        text-align: center;
+        margin-top: 40px;
+        width: 300px;
+        position: relative;
+        left: 190px;
+    }
+    #oprator{
+    margin-top: 20px;
+    }
+    #res{
+        height: 130px;
+        width: 300px;
+        border: 2px solid darkcyan;
+        border-radius: 7px;
+        text-align: center;
+        margin-top: 40px;
+        position: relative;
+        left: 190px;   
+    }
+#text2{
+    margin-top: 10px;
+}      
+    </style>
+<title>calculator</title>
+</head>
+<body>
+    <header id="header">
+        <h2>The Calculator</h2>
+    </header>
+    <div id="contain">
+ <section class="sec">
+   <input type="text" id="text1" placeholder="enter first number">
+   <input type="text" id="text2" placeholder="enter second number">
+   
+   <div id="oprator"> 
+    <button id="btn+"  onclick="operation('+')">+</button>
+    <button id="btn*"  onclick="operation('*')">*</button>
+    <button id="btn-"  onclick="operation('-')">-</button>
+    <button id="btn/"  onclick="operation('/')">/</button>
+  </div>
+ </section>
+
+ <section id="res" > 
+     <h2 id=" curreslt"> </h2>
+     <h2>The Final Result is:</h2> 
+     <h2 id="finalres"> </h2>
+ 
+    </section> 
+</div>
+ <script src="main.js"></script>
+</body>
+</html>
